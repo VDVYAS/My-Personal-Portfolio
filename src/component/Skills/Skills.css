@@ -1,0 +1,164 @@
+.skils {
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 2rem;
+}
+
+h2.sk {
+    text-align: center;
+    padding-top: 1rem;
+    color: #ff9244;
+    font-family: 'Gentium Book Plus', serif;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    animation-name: skill-h;
+    animation-duration: 2s;
+    display: flex;
+    flex-direction: column;
+}
+
+h2>hr {
+    width: 5%;
+    height: 1px;
+    margin-top: 0px;
+    animation-name: skill-line;
+    animation-duration: 2s;
+}
+
+@keyframes skill-line {
+    0% {
+        width: 100%;
+        background-color: red;
+    }
+    100% {
+        width: 5%;
+        background-color: #ff9244;
+    }
+}
+
+@keyframes skill-h {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+.details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.details>span {
+    color: white;
+}
+
+.bar {
+    position: relative;
+    border: 2px solid #ff9244;
+    border-radius: 20px;
+}
+
+.bar div {
+    position: relative;
+    width: 0;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #ff9244;
+}
+
+.html {
+    border: 2px solid #0bceaf;
+}
+
+.bar>#html-bar {
+    background-color: #0bceaf;
+}
+
+.css {
+    border: 2px solid #ffc107;
+}
+
+.bar>#css-bar {
+    background-color: #ffc107;
+}
+
+.javascript {
+    border: 2px solid #dc3545;
+}
+
+.bar>#javascript-bar {
+    background-color: #dc3545;
+}
+
+.react {
+    border: 2px solid #17a2b8;
+}
+
+.bar>#react-bar {
+    background-color: #17a2b8;
+}
+
+.skills:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+#html-bar {
+    animation: html-fill 2s forwards;
+}
+
+@keyframes html-fill {
+    100% {
+        width: 90%;
+    }
+}
+
+#css-bar {
+    animation: css-fill 2s forwards;
+}
+
+@keyframes css-fill {
+    100% {
+        width: 80%;
+    }
+}
+
+#javascript-bar {
+    animation: js-fill 2s forwards;
+}
+
+@keyframes js-fill {
+    100% {
+        width: 75%;
+    }
+}
+
+#react-bar {
+    animation: js-fill 2s forwards;
+}
+
+@keyframes js-fill {
+    100% {
+        width: 60%;
+    }
+}
+
+.skills {
+    padding-left: 270px;
+    padding-right: 270px;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 500px) {
+    .skils {
+        width: 100%;
+        margin: auto;
+    }
+    .skills {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}

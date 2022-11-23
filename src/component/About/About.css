@@ -1,0 +1,117 @@
+.about {
+    margin-top: 1.5rem;
+    background-image: url('../../assets/vd\ b&W.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.about-heading {
+    color: white;
+    font-family: 'Gentium Book Plus', serif;
+    font-size: 3rem;
+    margin-left: 2rem;
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 20rem;
+    animation-name: heading;
+    animation-duration: 3s;
+}
+
+@keyframes heading {
+    0% {
+        letter-spacing: 30px;
+    }
+    100% {
+        letter-spacing: 2px;
+    }
+}
+
+hr.about-line {
+    height: 1px;
+    width: 30%;
+    margin-top: 0px;
+    animation-name: about-hr;
+    animation-duration: 2s;
+}
+
+@keyframes about-hr {
+    0% {
+        width: 100%;
+        background-color: red;
+    }
+    100% {
+        width: 30%;
+        background-color: #ff9244;
+    }
+}
+
+.about-intro {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 20rem;
+    word-spacing: 2px;
+    margin-right: 20rem;
+    width: fit-content;
+    padding: 15px;
+}
+
+.about-intro>span {
+    color: #ff9244;
+    text-transform: uppercase;
+}
+
+.project {
+    margin-left: 2rem;
+}
+
+.project>.about-proj {
+    color: black;
+    background-color: #ff9244;
+    padding: 5px 1.5rem;
+    border: 1px solid #ff9244;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.5px;
+    margin-top: 1rem;
+}
+
+.project>.about-proj:hover {
+    background-color: #f78331;
+    cursor: pointer;
+    color: black;
+    padding: 8px 1.8rem;
+}
+
+@media screen and (max-width:500px) {
+    .about {
+        width: 100%;
+        margin: auto;
+        height: 421px;
+        gap: 0px;
+    }
+    .about-heading {
+        margin-top: 0rem;
+        animation-name: about-head;
+        animation-duration: 2s;
+    }
+    @keyframes about-head {
+        0% {
+            letter-spacing: 10px;
+        }
+        100% {
+            letter-spacing: 2px;
+        }
+    }
+    .about-intro {
+        margin-left: 0rem;
+        margin-right: 0rem;
+        padding: 40px;
+    }
+}

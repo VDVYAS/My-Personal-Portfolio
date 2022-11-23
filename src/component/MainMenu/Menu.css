@@ -1,0 +1,137 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    box-shadow: transparent;
+}
+
+.logo {
+    margin: 35px 20px 10px 20px;
+    color: #ff9244;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 1.5rem;
+}
+
+.navmenu {
+    margin-top: 10px;
+}
+
+.nav-list {
+    display: flex;
+    margin-right: 150px;
+    margin-top: 0px;
+    width: fit-content;
+}
+
+.nav-list>li {
+    list-style-type: none;
+    margin: -5px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-list>li>a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 15px;
+}
+
+.nav-list>li>a:hover {
+    font-weight: bold;
+    color: #ff9244;
+}
+
+.nav-list>li>a:active {
+    background-color: #ed7621;
+    padding: 5px;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+.nav-list>.Contact>#First {
+    width: 72px;
+}
+
+.nav-list>.Contact>#Second {
+    width: 72px;
+}
+
+.nav-list>li>#First {
+    background-color: #ff9244;
+    color: black;
+    height: 1px;
+    width: 48px;
+    animation-name: nav-line-first;
+    animation-duration: 2s;
+}
+
+.nav-list>li>#Second {
+    background-color: #ff9244;
+    color: black;
+    height: 1px;
+    width: 48px;
+    margin-top: 3px;
+    animation-name: nav-line-second;
+    animation-duration: 2s;
+}
+
+@keyframes nav-line-first {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes nav-line-second {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .nav>.logo {
+        position: fixed;
+        margin-top: 1rem;
+    }
+    .nav>.navmenu {
+        position: fixed;
+        right: 2rem;
+        margin-top: 1rem;
+        z-index: 99;
+        width: fit-content;
+    }
+    .nav-list {
+        flex-direction: column;
+        background-color: black;
+        padding: 3rem;
+        margin-right: 0rem;
+        gap: 2rem;
+        align-items: center;
+    }
+    .nav>:nth-child(2) {
+        position: fixed;
+    }
+    .nav-list>li {
+        margin: 0px;
+    }
+    .nav-list>li>hr {
+        display: none;
+    }
+    .bars {
+        width: 8%;
+        height: auto;
+        margin-right: 10px;
+        margin-top: 1rem;
+        animation: none;
+    }
+    .nav-list>li>:hover {
+        color: #ff9244;
+    }
+}

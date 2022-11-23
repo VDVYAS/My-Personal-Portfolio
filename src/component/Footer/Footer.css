@@ -1,0 +1,43 @@
+.footer {
+    background-color: #ff9244;
+    color: black;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.follow {
+    margin-top: 1rem;
+    margin-left: 50px;
+}
+
+.follow>img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.copyright {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    margin-left: -28px;
+    margin-bottom: 2px;
+}
+
+@media screen and (max-width:500px) {
+    .follow>img {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .follow {
+        margin-left: 0px;
+        gap: 1rem;
+        display: flex;
+    }
+    .copyright {
+        margin-left: 0px;
+    }
+}
